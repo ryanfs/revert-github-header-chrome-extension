@@ -1,0 +1,17 @@
+{
+  "name": "Fix GitHub's New Header",
+  "manifest_version": 2,
+  "version":"1.2",
+  "description": "Removes GitHub's new RIDICULOUSLY distracting black header, and sets it back to the header we've grown to know and love. ",
+  "permissions": [
+    "activeTab"
+  ],
+
+  "icons": {
+    "48": "icons/inverted.jpg"
+  },
+  "content_scripts": [ {
+    "matches": ["*://*.github.com/*"],
+    "js": ["background.js"]
+  } ]
+}
